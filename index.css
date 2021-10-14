@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
 :root{
-    --default-text: whitesmoke;
+    --default-text: #e8e6e3;
+    --default-background: #181a1b;
+    --default-border: #363839;
+}
+*{
+    margin: 0;
+    padding: 0;
 }
 body{
-    background-color: #181a1b;
+    background-color: var(--default-background);
     color: var(--default-text);
+    min-height: calc(100vh - 2rem);
+    padding: 1rem;
 }
 .header img{
-    max-width: 3rem;
+    max-height: 2.8rem;
     border-radius: 100%;
 }
 .header{
@@ -21,7 +30,53 @@ body{
 .header a{
     text-decoration: none;
     color: var(--default-text);
+    font-family: 'Arial', sans-serif;
 }
 .header svg{
     color: var(--default-text);
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    color: var(--default-text);
+}
+.main h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 5rem;
+}
+.blue{ color: #4285f4; }
+.red{ color: #ea4335; }
+.yellow{ color: #fbbc05; }
+.green{ color: #34a853; }
+
+.main .searchBar{
+    width: 50%;
+    border: 0.18rem solid var(--default-border);
+    padding: 0.8rem;
+    border-radius: 2rem;
+}
+.main .searchBar input{
+    background-color: var(--default-background);
+    color: var(--default-text);
+    border: none;
+    width: 90%;
+    margin-left: 0.5rem;
+    outline: none;
+}
+.main .buttons{
+    padding-top: 1.5rem;
+
+}
+.main .buttons *{
+    background-color: var(--default-background);
+    color: var(--default-text);
+    border: 0.15rem solid var(--default-border);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
 }
