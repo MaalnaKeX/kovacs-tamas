@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 body{
     justify-content: space-between;
@@ -39,13 +40,14 @@ body{
     color: var(--default-text);
 }
 .main{
+    margin-bottom: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: var(--default-text);
 }
-.main h1{
+.main h1 *{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 5rem;
@@ -56,16 +58,17 @@ body{
 .green{ color: #34a853; }
 
 .main .searchBar{
+    display: flex;
     width: 50%;
     border: 0.18rem solid var(--default-border);
     padding: 0.8rem;
     border-radius: 2rem;
 }
 .main .searchBar input{
-    background-color: var(--default-background);
+    background-color: rgba(0, 0, 0, 0);
     color: var(--default-text);
     border: none;
-    width: 90%;
+    width: 100%;
     margin-left: 0.5rem;
     outline: none;
 }
@@ -93,8 +96,12 @@ body{
 .footer a{
     color: var(--default-text);
     text-decoration: none;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
 }
+#magnifier{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 570px){
     .footer .left .hidden{
         visibility: hidden;
@@ -110,3 +117,4 @@ body{
         padding-bottom: 2rem;
     }
 }
+
